@@ -1,0 +1,14 @@
+{
+  "name": "the-best-ui-framework",
+  "version": "0.1.0",
+  "description": "Experimental UI framework combining ideas from Angular and React",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p examples/test-app/tsconfig.json",
+    "serve": "node serve.js",
+    "test": "echo \"No tests\""
+  },
+  "author": "",
+  "license": "MIT"
+}
