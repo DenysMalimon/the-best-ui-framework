@@ -6,6 +6,13 @@
 </head>
 <body>
   <div id="app"></div>
-  <script src="dist/index.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "the-best-ui-framework": "./dist/src/index.js"
+      }
+    }
+  </script>
+  <script type="module" src="dist/index.js"></script>
 </body>
 </html>

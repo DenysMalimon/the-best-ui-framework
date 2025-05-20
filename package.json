@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json && tsc -p examples/test-app/tsconfig.json",
+    "build": "tsc -p tsconfig.json && rm -rf examples/test-app/dist/src && cp -r dist/src examples/test-app/dist/src && tsc -p examples/test-app/tsconfig.json",
     "serve": "node serve.js",
     "test": "echo \"No tests\""
   },
